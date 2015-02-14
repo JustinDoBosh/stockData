@@ -1,0 +1,16 @@
+
+*********displaying general information for msft *********
+
+Sector: Technology
+
+end: 2015-02-14
+
+CompanyName: No data to display
+
+symbol: msft
+
+start: 1986-03-13
+
+FullTimeEmployees: 128000
+
+Industry: Business Software & Services

@@ -1,0 +1,4 @@
+
+*********displaying dividend information msft *********
+
+Dividend yield : 2.67

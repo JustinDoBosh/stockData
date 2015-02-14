@@ -1,0 +1,6 @@
+
+*********displaying moving average information for msft *********
+
+50 day moving average : 44.7929
+
+200 day moving averge : 45.8487
