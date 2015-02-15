@@ -1,6 +1,6 @@
 from yahoo_finance import Share
-from pprint import pprint
 from datetime import datetime
+import webbrowser
 
 class stockLookUp():
 	def __init__(self):
@@ -114,6 +114,7 @@ class stockLookUp():
 					si.write(wInfo)
 		si.close()
 		print companySymbol + '\'s stock information has been written to the file stockInformation.txt'
+		webbrowser.open('stockInformation.txt')
 
 stockX = stockLookUp()
 stockX.stockInformation()

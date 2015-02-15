@@ -1,62 +1,62 @@
 
-*********displaying general information for msft *********
+*********displaying general information for MMM *********
 
-Sector: Technology
+Sector: Industrial Goods
 
 end: 2015-02-15
 
 CompanyName: No data to display
 
-symbol: msft
+symbol: MMM
 
-start: 1986-03-13
+start: 1970-01-02
 
-FullTimeEmployees: 128000
+FullTimeEmployees: 89800
 
-Industry: Business Software & Services
+Industry: Diversified Machinery
 
-*********displaying stock price information for msft *********
+*********displaying stock price information for MMM *********
 
-Year low : 37.19
+Year low : 129.70
 
-Opening price : 43.38
+Opening price : 165.90
 
-Current price : 43.87
+Current price : 165.94
 
-Day high : 43.87
+Day high : 166.62
 
-dayLow : 43.15
+dayLow : 165.33
 
-Previous day close : 43.09
+Previous day close : 165.91
 
-Year high : 50.05
+Year high : 168.16
 
-Price change : +0.78
+Price change : +0.03
 
-*********displaying ratio information for msft *********
+*********displaying ratio information for MMM *********
 
-Short ratio : 1.30
+Short ratio : 3.40
 
-Price earnings ratio : 17.38
+Price earnings ratio : 22.15
 
-Price earnings growth ratio : 2.15
+Price earnings growth ratio : 2.11
 
-*********displaying moving average information for msft *********
+*********displaying moving average information for MMM *********
 
-50 day moving average : 44.7929
+50 day moving average : 163.633
 
-200 day moving averge : 45.8487
+200 day moving averge : 152.339
 
-*********displaying dividend information msft *********
+*********displaying dividend information MMM *********
 
-Dividend yield : 2.67
+Dividend yield : 2.16
 
-*********displaying financial information for msft *********
+*********displaying financial information for MMM *********
 
-Earnings per share : 2.479
+Earnings per share : 7.49
 
-Market capitalization : 359.9B
+Market capitalization : 105.3B
 
-EBITDA : 33.606B
+EBITDA : 8.543B
 
-Book value : 11.18
+Book value : 20.64
