@@ -1,8 +1,0 @@
-
-*********displaying ratio information for msft *********
-
-Short ratio : 1.30
-
-Price earnings ratio : 17.38
-
-Price earnings growth ratio : 2.11

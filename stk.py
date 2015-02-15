@@ -51,104 +51,69 @@ class stockLookUp():
 		global info
 		info = stk.get_info()
 
-	def generalInfo(self):
-		with open('generalinfo.txt', 'w') as gi:
-			gi.write('\n*********displaying general information for ' +  companySymbol + ' *********\n')
+	def stockInformation(self):
+		with open('stockInformation.txt', 'w') as si:
+			#General Information
+			si.write('\n*********displaying general information for ' +  companySymbol + ' *********\n')
 			for key, value in info.iteritems():
 				if value == ' ' or type(value) != str:
 					wInfo = '\n' + key + ': ' + 'No data to display\n'
-					gi.write(wInfo)
+					si.write(wInfo)
 				else:
 					wInfo =  '\n' + key + ': ' + value + '\n' 
-					gi.write(wInfo)
-				print "\n"
-		gi.close()
-		print "wrote general information to file.\n"
-
-
-	def pricingInfo(self):
-		with open('pricingInfo.txt', 'w') as pi:
+					si.write(wInfo)
+			#Pricing Information 
 			pInfo = {"Opening price " : openPrice, "Current price " : currentPrice, "Price change " : change, "Previous day close " : prevClose, "Day high " : dayHigh, "dayLow " : dayLow, "Year high " : yrHigh, "Year low " : yrLow}
-			pi.write('\n*********displaying stock price information for ' + companySymbol + ' *********\n')
+			si.write('\n*********displaying stock price information for ' + companySymbol + ' *********\n')
 			for key, value in pInfo.iteritems():
 				if value == " " or type(value) != str:
 					wInfo = '\n' + key + ': ' + 'No data to display\n'
-					pi.write(wInfo)
+					si.write(wInfo)
 				else:
 					wInfo =  '\n' + key + ': ' + value + '\n' 
-					pi.write(wInfo)
-				print "\n"
-		pi.close()
-		print "wrote pricing information to file.\n"
-
-
-	def ratios(self):
-		with open('stkRatios.txt', 'w') as sr:
+					si.write(wInfo)
+			#Ratios
 			ratioInfo = {"Price earnings ratio " : PERatio, "Price earnings growth ratio " : PEGrowthRatio, "Short ratio " : shrtRatio}		
-			sr.write('\n*********displaying ratio information for ' + companySymbol + ' *********\n')
+			si.write('\n*********displaying ratio information for ' + companySymbol + ' *********\n')
 			for key, value in ratioInfo.iteritems():
 				if value == " " or type(value) != str:
 					wInfo = '\n' + key + ': ' + 'No data to display\n'
-					sr.write(wInfo)
+					si.write(wInfo)
 				else:
 					wInfo =  '\n' + key + ': ' + value + '\n' 
-					sr.write(wInfo)
-				print "\n"
-		sr.close()
-		print "wrote ratios to file.\n"
-
-
-	def movingAvg(self):
-		with open('movingAvgs.txt', 'w') as ma:
+					si.write(wInfo)
+			#MovingAverages
 			movingAvgs = {"50 day moving average " : fiftyDayMA, "200 day moving averge " : twoHudDayMA}
-			ma.write('\n*********displaying moving average information for ' + companySymbol + ' *********\n')
+			si.write('\n*********displaying moving average information for ' + companySymbol + ' *********\n')
 			for key, value in movingAvgs.iteritems():
 				if value == " " or type(value) != str:
 					wInfo = '\n' + key + ': ' + 'No data to display\n'
-					ma.write(wInfo)
+					si.write(wInfo)
 				else:
 					wInfo =  '\n' + key + ': ' + value + '\n' 
-					ma.write(wInfo)
-				print "\n"
-		ma.close()
-		print "wrote moving averages to file.\n"
-
-
-	def dividendInfo(self):
-		with open('dividendInfo.txt', 'w') as di:
+					si.write(wInfo)
+			#Dividend Information 
 			divInfo = {"Dividend yield " : divYield}
-			di.write('\n*********displaying dividend information ' + companySymbol + ' *********\n')
+			si.write('\n*********displaying dividend information ' + companySymbol + ' *********\n')
 			for key, value in divInfo.iteritems():
 				if value == " " or type(value) != str:
 					wInfo = '\n' + key + ': ' + 'No data to display\n'
-					di.write(wInfo)
+					si.write(wInfo)
 				else:
 					wInfo =  '\n' + key + ': ' + value + '\n' 
-					di.write(wInfo)
-				print "\n"
-		di.close()
-		print "wrote dividend information to file.\n"
-
-
-	def stockFinInfo(self):
-		with open('stkFinInfo.txt', 'w') as sfi:
+					si.write(wInfo)
+			#Stock Financial Information
 			stkfin = {"Earnings per share " : EPS, "EBITDA " : ebitda, "Book value " : bval, "Market capitalization " : mtkCap}
-			sfi.write('\n*********displaying financial information for ' + companySymbol + ' *********\n')
+			si.write('\n*********displaying financial information for ' + companySymbol + ' *********\n')
 			for key, value in stkfin.iteritems():
 				if value == " " or type(value) != str:
 					wInfo = '\n' + key + ': ' + 'No data to display\n'
-					sfi.write(wInfo)
+					si.write(wInfo)
 				else:
 					wInfo =  '\n' + key + ': ' + value + '\n' 
-					sfi.write(wInfo)
-				print "\n"
-		sfi.close()
-		print "wrote stock financial information to file.\n"
+					si.write(wInfo)
+		si.close()
+		print companySymbol + '\'s stock information has been written to the file stockInformation.txt'
 
 stockX = stockLookUp()
-stockX.generalInfo()
-stockX.pricingInfo()
-stockX.ratios()
-stockX.movingAvg()
-stockX.dividendInfo()
-stockX.stockFinInfo()
+stockX.stockInformation()
