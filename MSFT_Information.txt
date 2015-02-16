@@ -1,0 +1,62 @@
+
+*********displaying general information for MSFT *********
+
+Sector: Technology
+
+end: 2015-02-16
+
+CompanyName: No data to display
+
+symbol: msft
+
+start: 1986-03-13
+
+FullTimeEmployees: 128000
+
+Industry: Business Software & Services
+
+*********displaying stock price information for MSFT *********
+
+Year low : 37.19
+
+Opening price : 43.38
+
+Current price : 43.87
+
+Day high : 43.87
+
+dayLow : 43.15
+
+Previous day close : 43.09
+
+Year high : 50.05
+
+Price change : +0.78
+
+*********displaying ratio information for MSFT *********
+
+Short ratio : 1.30
+
+Price earnings ratio : 17.38
+
+Price earnings growth ratio : 2.15
+
+*********displaying moving average information for MSFT *********
+
+50 day moving average : 44.7929
+
+200 day moving averge : 45.8487
+
+*********displaying dividend information MSFT *********
+
+Dividend yield : 2.67
+
+*********displaying financial information for MSFT *********
+
+Earnings per share : 2.479
+
+Market capitalization : 359.9B
+
+EBITDA : 33.606B
+
+Book value : 11.18

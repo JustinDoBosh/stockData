@@ -9,6 +9,7 @@ class stockLookUp():
 		stk = Share(stkSymbol)
 		global companySymbol
 		companySymbol = stkSymbol
+		companySymbol = companySymbol.upper()
 		#Gather info for the following stk symbol 
 		global openPrice 
 		openPrice= stk.get_open()
@@ -52,7 +53,8 @@ class stockLookUp():
 		info = stk.get_info()
 
 	def stockInformation(self):
-		with open('stockInformation.txt', 'w') as si:
+		filename = companySymbol + '_Information.txt'
+		with open(filename, 'w') as si:
 			#General Information
 			si.write('\n*********displaying general information for ' +  companySymbol + ' *********\n')
 			for key, value in info.iteritems():
@@ -114,7 +116,7 @@ class stockLookUp():
 					si.write(wInfo)
 		si.close()
 		print companySymbol + '\'s stock information has been written to the file stockInformation.txt'
-		webbrowser.open('stockInformation.txt')
+		webbrowser.open(filename)
 
 stockX = stockLookUp()
 stockX.stockInformation()
